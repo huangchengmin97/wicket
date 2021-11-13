@@ -46,11 +46,21 @@ public class NavigatorLabel extends Label
 	public NavigatorLabel(final String id, final IPageableItems pageable)
 	{
 		super(id);
-		setDefaultModel(new StringResourceModel("NavigatorLabel", this,
+		setDefaultModel(new StringResourceModel(getNavigationLabelKey(), this,
 			new Model<>(new LabelModelObject(pageable))));
 	}
 
-	private static class LabelModelObject implements IClusterable
+	/**
+	 * Allows to override the key used for navigation label.
+	 *
+	 * @return The i18n key.
+	 */
+	protected String getNavigationLabelKey()
+	{
+		return "NavigatorLabel";
+	}
+
+	public static class LabelModelObject implements IClusterable
 	{
 		private static final long serialVersionUID = 1L;
 		private final IPageableItems pageable;
