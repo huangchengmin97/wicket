@@ -95,7 +95,7 @@ public class NavigationToolbar extends AbstractToolbar
 	/**
 	 * Factory method used to create the navigator component in place of label that will be used by the datatable.
 	 * This method takes precedence over {@link NavigationToolbar#newNavigatorLabel(String, DataTable)}.
-	 * By default it returns <code>null</code.
+	 * By default it returns <code>null</code>.
 	 *
 	 * <strong>NOTE:</strong> This is just a HACK to not break API in wicket 9.x and support use case of a more
 	 * complex component as label. In wicket 10.x we will simply change the return type of
