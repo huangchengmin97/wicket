@@ -863,6 +863,11 @@
 						</execution>
 					</executions>
 				</plugin>
+			        <plugin>
+          				<groupId>edu.illinois</groupId>
+          				<artifactId>nondex-maven-plugin</artifactId>
+          				<version>1.1.2</version>
+        			</plugin>
 				<plugin>
 					<groupId>de.thetaphi</groupId>
 					<artifactId>forbiddenapis</artifactId>
