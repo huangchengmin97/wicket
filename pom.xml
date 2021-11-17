@@ -763,6 +763,11 @@
 				<artifactId>japicmp-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
+          			<groupId>edu.illinois</groupId>
+          			<artifactId>nondex-maven-plugin</artifactId>
+          			<version>1.1.2</version>
+        		</plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-eclipse-plugin</artifactId>
 				<inherited>true</inherited>
